@@ -70,33 +70,33 @@ Prompt Engineering<br>
 <b>AI Model<b><br>
 Google Gemini API<br>
 ##📁 Project Structure
-AI-Chatbot/
-│
-├── backend/
-│   │
-│   ├── node_modules/
-│   ├── routes/
-│   ├── services/
-│   ├── uploads/
-│   │
-│   ├── .env
-│   ├── .env.example
-│   ├── .gitignore
-│   ├── package.json
-│   ├── package-lock.json
-│   └── server.js
-│
-├── frontend/
-│   │
-│   ├── public/
-│   ├── src/
-│   │
-│   ├── .gitignore
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
-│
-└── README.md
+AI-Chatbot/<br>
+│<br>
+├── backend/<br>
+│   │<br>
+│   ├── node_modules/<br>
+│   ├── routes/<br>
+│   ├── services/<br>
+│   ├── uploads/<br>
+│   │<br>
+│   ├── .env<br>
+│   ├── .env.example<br>
+│   ├── .gitignore<br>
+│   ├── package.json<br>
+│   ├── package-lock.json<br>
+│   └── server.js<br>
+│<br>
+├── frontend/<br>
+│   │<br>
+│   ├── public/<br>
+│   ├── src/<br>
+│   │<br>
+│   ├── .gitignore<br>
+│   ├── eslint.config.js<br>
+│   ├── index.html<br>
+│   ├── package.json<br>
+│   └── vite.config.js<br>
+│<br>
+└── README.md<br>
 
 
