@@ -47,7 +47,7 @@ Responsive React interface
 RESTful backend APIs
 Modular project architecture
 ## 💻 Technology Stack
-###Frontend
+<b>Frontend</b>
 React.js
 Vite
 Axios
