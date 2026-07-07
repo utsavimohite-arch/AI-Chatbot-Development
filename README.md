@@ -23,3 +23,14 @@ The chatbot extracts meaningful information from uploaded files, constructs cont
 18. Future Improvements
 19. Contributing
 20. License
+## 🚀 About
+This project is designed to simplify interaction with structured datasets.
+
+Instead of manually searching through spreadsheets, users simply upload a CSV or Excel file and ask questions like
+
+What is the highest salary?
+Which product generated maximum revenue?
+Show all customers from Mumbai.
+Calculate average sales.
+
+The chatbot processes uploaded files using an NLP pipeline before sending relevant context to Google's Gemini API for intelligent response generation.
