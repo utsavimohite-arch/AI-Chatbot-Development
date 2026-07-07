@@ -68,4 +68,35 @@ Normalization<br>
 Context Extraction<br>
 Prompt Engineering<br>
 <b>AI Model<b><br>
-Google Gemini API
+Google Gemini API<br>
+##📁 Project Structure
+AI-Chatbot/
+│
+├── backend/
+│   │
+│   ├── node_modules/
+│   ├── routes/
+│   ├── services/
+│   ├── uploads/
+│   │
+│   ├── .env
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+├── frontend/
+│   │
+│   ├── public/
+│   ├── src/
+│   │
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+│
+└── README.md
+
+
