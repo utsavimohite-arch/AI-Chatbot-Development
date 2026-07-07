@@ -47,25 +47,25 @@ Responsive React interface
 RESTful backend APIs
 Modular project architecture
 ## 💻 Technology Stack
-<b>Frontend</b>
-React.js
-Vite
-Axios
-CSS / Tailwind
-###Backend
-Node.js
-Express.js
-Multer
-dotenv
-cors
-###File Processing
-csv-parser
-xlsx
-###NLP Pipeline
-Text Cleaning
-Tokenization
-Normalization
-Context Extraction
-Prompt Engineering
-###AI Model
+<b>Frontend</b><br>
+React.js<br>
+Vite<br>
+Axios<br>
+CSS / Tailwind<br>
+<b>Backend</b><br>
+Node.js<br>
+Express.js<br>
+Multer<br>
+dotenv<br>
+cors<br>
+<b>File Processing</b><br>
+csv-parser<br>
+xlsx<br>
+<b>NLP Pipeline</b><br>
+Text Cleaning<br>
+Tokenization<br>
+Normalization<br>
+Context Extraction<br>
+Prompt Engineering<br>
+<b>AI Model<b><br>
 Google Gemini API
