@@ -99,41 +99,41 @@ AI-Chatbot/<br>
 │<br>
 └── README.md<br>
 ## 🏗️ Overall System Architecture
-                             +----------------------+
-                             |        User          |
-                             +----------+-----------+
-                                        |
-                         Upload CSV / Excel & Ask Query
-                                        |
-                                        ▼
-                       +-------------------------------+
-                       |       React Frontend          |
-                       | Upload + Chat Interface       |
-                       +---------------+---------------+
-                                       |
-                                  REST API
-                                       |
-                                       ▼
-                     +-----------------------------------+
-                     |      Node.js Express Backend      |
-                     +---------------+-------------------+
-                                     |
-         +---------------------------+---------------------------+
-         |                           |                           |
-         ▼                           ▼                           ▼
- File Upload Service        NLP Processing Service       Conversation History
- (CSV/Excel Parser)        Cleaning & Context            Chat Session Storage
-         |                           |
-         +-------------+-------------+
-                       |
-                       ▼
-             Prompt Construction Engine
-                       |
-                       ▼
-             Google Gemini API Endpoint
-                       |
-                       ▼
-              AI Generated Response
-                       |
-                       ▼
-              React Chat Interface
+                             +----------------------+<br>
+                             |        User          |<br>
+                             +----------+-----------+<br>
+                                        |<br>
+                         Upload CSV / Excel & Ask Query<br>
+                                        |<br>
+                                        ▼<br>
+                       +-------------------------------+<br>
+                       |       React Frontend          |<br>
+                       | Upload + Chat Interface       |<br>
+                       +---------------+---------------+<br>
+                                       |<br>
+                                  REST API<br>
+                                       |<br>
+                                       ▼<br>
+                     +-----------------------------------+<br>
+                     |      Node.js Express Backend      |<br>
+                     +---------------+-------------------+<br>
+                                     |<br>
+         +---------------------------+---------------------------+<br>
+         |                           |                           |<br>
+         ▼                           ▼                           ▼<br>
+ File Upload Service        NLP Processing Service       Conversation History<br>
+ (CSV/Excel Parser)        Cleaning & Context            Chat Session Storage<br>
+         |                           |<br>
+         +-------------+-------------+<br>
+                       |<br>
+                       ▼<br>
+             Prompt Construction Engine<br>
+                       |<br>
+                       ▼<br>
+             Google Gemini API Endpoint<br>
+                       |<br>
+                       ▼<br>
+              AI Generated Response<br>
+                       |<br>
+                       ▼<br>
+              React Chat Interface<br>
