@@ -132,4 +132,36 @@ Services<br>
       │<br>
       ▼<br>
 Google Gemini API<br>
+## 🧠 NLP Processing Pipeline
+CSV / Excel Upload<br>
+        │<br>
+        ▼<br>
+File Validation<br>
+        │<br>
+        ▼<br>
+  Extract Data<br>
+        │<br>
+        ▼<br>
+Handle Missing Values<br>
+        │<br>
+        ▼<br>
+  Text Cleaning<br>
+        │<br>
+        ▼<br>
+  Tokenization<br>
+        │<br>
+        ▼<br>
+  Normalization<br>
+        │<br>
+        ▼<br>
+Context Extraction<br>
+        │<br>
+        ▼<br>
+Prompt Engineering<br>
+        │<br>
+        ▼<br>
+  Gemini API<br>
+        │<br>
+        ▼<br>
+Generated Response<br>
                       
