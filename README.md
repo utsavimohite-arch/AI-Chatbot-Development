@@ -7,22 +7,21 @@ The chatbot extracts meaningful information from uploaded files, constructs cont
 2. Features
 3. Technology Stack
 4. Project Structure
-5. System Architecture
-6. Frontend Architecture
-7. Backend Architecture
-8. NLP Processing Pipeline
-9. End-to-End AI Workflow
-10. API Documentation
-11. Google Gemini API Endpoint
-12. Conversation History Module
-13. Technical Report
-14. Installation
-15. Environment Variables
-16. Running the Project
-17. Demo Video
-18. Future Improvements
-19. Contributing
-20. License
+5. Frontend Architecture
+6. Backend Architecture
+7. NLP Processing Pipeline
+8. End-to-End AI Workflow
+9. API Documentation
+10. Google Gemini API Endpoint
+11. Conversation History Module
+12. Technical Report
+15. Installation
+16. Environment Variables
+17. Running the Project
+18. Demo Video
+19. Future Improvements
+20. Contributing
+21. License
 ## 🚀 About
 This project is designed to simplify interaction with structured datasets.
 
@@ -98,42 +97,21 @@ AI-Chatbot/<br>
 │   └── vite.config.js<br>
 │<br>
 └── README.md<br>
-## 🏗️ Overall System Architecture
-                             +----------------------+<br>
-                             |        User          |<br>
-                             +----------+-----------+<br>
-                                        |<br>
-                         Upload CSV / Excel & Ask Query<br>
-                                        |<br>
-                                        ▼<br>
-                       +-------------------------------+<br>
-                       |       React Frontend          |<br>
-                       | Upload + Chat Interface       |<br>
-                       +---------------+---------------+<br>
-                                       |<br>
-                                  REST API<br>
-                                       |<br>
-                                       ▼<br>
-                     +-----------------------------------+<br>
-                     |      Node.js Express Backend      |<br>
-                     +---------------+-------------------+<br>
-                                     |<br>
-         +---------------------------+---------------------------+<br>
-         |                           |                           |<br>
-         ▼                           ▼                           ▼<br>
- File Upload Service        NLP Processing Service       Conversation History<br>
- (CSV/Excel Parser)        Cleaning & Context            Chat Session Storage<br>
-         |                           |<br>
-         +-------------+-------------+<br>
-                       |<br>
-                       ▼<br>
-             Prompt Construction Engine<br>
-                       |<br>
-                       ▼<br>
-             Google Gemini API Endpoint<br>
-                       |<br>
-                       ▼<br>
-              AI Generated Response<br>
-                       |<br>
-                       ▼<br>
-              React Chat Interface<br>
+## 🎨 Frontend Architecture
+User<br>
+ │<br>
+ ▼<br>
+React Components<br>
+ │<br>
+ ├── Upload Component<br>
+ ├── Chat Window<br>
+ ├── Message List<br>
+ ├── Input Box<br>
+ └── Response Display<br>
+ │<br>
+ ▼<br>
+Axios Service<br>
+ │<br>
+ ▼<br>
+Backend REST API<br>
+                      
