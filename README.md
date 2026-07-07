@@ -69,7 +69,7 @@ Context Extraction<br>
 Prompt Engineering<br>
 <b>AI Model<b><br>
 Google Gemini API<br>
-##📁 Project Structure
+## 📁 Project Structure
 AI-Chatbot/<br>
 │<br>
 ├── backend/<br>
