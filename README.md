@@ -164,4 +164,54 @@ Prompt Engineering<br>
         │<br>
         ▼<br>
 Generated Response<br>
+## 🤖 End-to-End AI Workflow
+User Uploads CSV / Excel<br>
+        │<br>
+        ▼<br>
+Frontend Upload Component<br>
+        │<br>
+        ▼<br>
+POST /upload<br>
+        │<br>
+        ▼<br>
+Backend Receives File<br>
+        │<br>
+        ▼<br>
+CSV / Excel Parsing<br>
+        │<br>
+        ▼<br>
+Dataset Converted into JSON<br>
+        │<br>
+        ▼<br>
+NLP Processing<br>
+        │<br>
+        ▼<br>
+Context Generation<br>
+        │<br>
+        ▼<br>
+Store Parsed Context<br>
+        │<br>
+        ▼<br>
+User Asks Question<br>
+        │<br>
+        ▼<br>
+   POST /chat<br>
+        │<br>
+        ▼,br>
+Retrieve Stored Context<br>
+        │<br>
+        ▼<br>
+Prompt Generation<br>
+        │<br>
+        ▼<br>
+   Gemini API<br>
+        │<br>
+        ▼<br>
+AI Response<br>
+        │<br>
+        ▼<br>
+Store Conversation<br>
+        │<br>
+        ▼<br>
+Display Response<br>
                       
