@@ -114,4 +114,22 @@ Axios Service<br>
  │<br>
  ▼<br>
 Backend REST API<br>
+## ⚙️ Backend Architecture
+Express Server<br>
+      │<br>
+      ▼<br>
+    Routes<br>
+      │<br>
+      ▼<br>
+Services<br>
+ │<br>
+ ├── Upload Service<br>
+ ├── CSV Parser<br>
+ ├── Excel Parser<br>
+ ├── NLP Pipeline<br>
+ ├── Prompt Generator<br>
+ └── Gemini API Service<br>
+      │<br>
+      ▼<br>
+Google Gemini API<br>
                       
