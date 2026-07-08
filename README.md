@@ -259,4 +259,35 @@ Gemini API<br>
       ▼<br>
 AI Generated Answer<br>
 
+## 💬 Conversation History Module
+The chatbot maintains a conversation history to provide contextual and coherent responses throughout a chat session.<br>
+
+### Features
+Stores previous user questions<br>
+Stores AI responses<br>
+Preserves conversation context<br>
+Improves follow-up question accuracy<br>
+Can be extended for persistent database storage<br>
+
+### Workflow
+User Question<br>
+      │<br>
+      ▼<br>
+Conversation History<br>
+      │<br>
+      ▼<br>
+Append Current Question<br>
+      │<br>
+      ▼<br>
+Generate Prompt<br>
+      │<br>
+      ▼<br>
+Gemini API<br>
+      │<br>
+      ▼<br>
+Store AI Response<br>
+      │<br>
+      ▼<br>
+Return Updated Chat<br>
+
                       
