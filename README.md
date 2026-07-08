@@ -311,5 +311,40 @@ Context Extraction<br>
 Prompt Construction<br>
 #### AI Layer
 Google Gemini API<br>
+#### Output
+Natural language responses generated from uploaded datasets.<br>
+
+## ⚙️ Environment Variables
+PORT=5000<br>
+
+GEMINI_API_KEY=your_api_key<br>
+
+MODEL_NAME=gemini-2.5-flash<br>
+
+## ▶️ Running the Project
+### Backend
+cd backend<br>
+npm install<br>
+npm run dev<br>
+### Frontend
+cd frontend<br>
+npm install<br>
+npm run dev<br>
+
+## 🤝 Contributing
+1.Fork the repository.<br>
+
+2.Create a feature branch.<br>
+git checkout -b feature/your-feature<br>
+
+3.Commit your changes.<br>
+git commit -m "Add feature"<br>
+
+4.Push your branch.<br>
+git push origin feature/your-feature<br>
+
+5.Create a Pull Request.
+
+
 
                       
