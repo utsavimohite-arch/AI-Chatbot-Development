@@ -246,23 +246,17 @@ file : sales.xlsx<br>
 ## 🌐 Google Gemini API
 <b>Endpoint</b><br>
 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent<br>
-<b>Headers</b>
-| Header       | Value            |<br>
-| ------------ | ---------------- |<br>
-| Content-Type | application/json |<br>
-<b>Request Body</b>
-{<br>
-  "contents": [<br>
-    {<br>
-      "parts": [<br>
-        {<br>
-          "text": "Prompt generated from uploaded dataset."<br>
-        }<br>
-      ]<br>
-    }<br>
-  ]<br>
-}<br>
-<b>Workflow</b>
 
+<ul>Workflow<\ul>
+Parsed Dataset<br>
+      │<br>
+      ▼<br>
+Prompt Engineering<br>
+      │<br>
+      ▼<br>
+Gemini API<br>
+      │<br>
+      ▼<br>
+AI Generated Answer<br>
 
                       
