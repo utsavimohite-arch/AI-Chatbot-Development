@@ -247,7 +247,7 @@ file : sales.xlsx<br>
 <b>Endpoint</b><br>
 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent<br>
 
-<ul>Workflow<\ul>
+<ul>Workflow</ul><br>
 Parsed Dataset<br>
       │<br>
       ▼<br>
