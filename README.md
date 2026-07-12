@@ -2,7 +2,8 @@
 An intelligent AI-powered chatbot built using React.js, Node.js, and Google Gemini API that enables users to upload structured datasets (CSV/Excel), process them through an NLP pipeline, and ask questions in natural language.
 
 The chatbot extracts meaningful information from uploaded files, constructs context-aware prompts, and leverages Google's Gemini models to generate accurate and conversational responses.<br>
-[Watch the video on YouTube](https://youtu.be/USo4q3HjH9w)<br>
+
+[Watch the video of our working AI Chatbot on YouTube](https://youtu.be/USo4q3HjH9w)<br>
 
 ## 📚 Table of Contents
 1. About
