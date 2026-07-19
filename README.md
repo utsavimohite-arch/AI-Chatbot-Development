@@ -36,18 +36,20 @@ Show all customers from Mumbai.
 Calculate average sales.
 
 The chatbot processes uploaded files using an NLP pipeline before sending relevant context to Google's Gemini API for intelligent response generation.
+
 ## ✨ Features
-Upload CSV datasets
-Upload Excel (.xlsx/.xls) datasets
-AI-powered conversational chatbot
-NLP preprocessing pipeline
-Automatic context extraction
-Google Gemini integration
-Conversation history
-File upload validation
-Responsive React interface
-RESTful backend APIs
-Modular project architecture
+Upload CSV datasets<br>
+Upload Excel (.xlsx/.xls) datasets<br>
+AI-powered conversational chatbot<br>
+NLP preprocessing pipeline<br>
+Automatic context extraction<br>
+Google Gemini integration<br>
+Conversation history<br>
+File upload validation<br>
+Responsive React interface<br>
+RESTful backend APIs<br>
+Modular project architecture<br>
+
 ## 💻 Technology Stack
 <b>Frontend</b><br>
 React.js<br>
