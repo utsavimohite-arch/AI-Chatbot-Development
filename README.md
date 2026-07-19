@@ -263,7 +263,7 @@ AI Generated Answer<br>
 ## 💬 Conversation History Module
 The chatbot maintains a conversation history to provide contextual and coherent responses throughout a chat session.<br>
 
-### Features
+### Feature
 Stores previous user questions<br>
 Stores AI responses<br>
 Preserves conversation context<br>
