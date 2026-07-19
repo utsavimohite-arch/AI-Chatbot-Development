@@ -8,7 +8,7 @@ The chatbot extracts meaningful information from uploaded files, constructs cont
 ## 📚 Table of Contents
 -[About](#about)<br>
 -[Features](#✨features)<br>
--[Technology Stack](#technology_stack)<br>
+-[Technology Stack](#technology-stack)<br>
 4. Project Structure<br>
 5. Frontend Architecture<br>
 6. Backend Architecture<br>
