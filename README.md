@@ -6,7 +6,7 @@ The chatbot extracts meaningful information from uploaded files, constructs cont
 [Watch the video of our working AI Chatbot on YouTube](https://youtu.be/USo4q3HjH9w)<br>
 
 ## 📚 Table of Contents
--[About](#about)<br>
+-[About](#✨about)<br>
 2. Features<br>
 3. Technology Stack<br>
 4. Project Structure<br>
@@ -25,7 +25,7 @@ The chatbot extracts meaningful information from uploaded files, constructs cont
 19. Future Improvements<br>
 20. Contributing<br>
 21. License<br>
-## About
+## ✨About
 This project is designed to simplify interaction with structured datasets.
 
 Instead of manually searching through spreadsheets, users simply upload a CSV or Excel file and ask questions like
