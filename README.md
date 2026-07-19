@@ -6,9 +6,9 @@ The chatbot extracts meaningful information from uploaded files, constructs cont
 [Watch the video of our working AI Chatbot on YouTube](https://youtu.be/USo4q3HjH9w)<br>
 
 ## 📚 Table of Contents
--[About](#about)<br>
--[Features](#✨features)<br>
--[Technology Stack](#technology-stack)<br>
+1.About<br>
+2.Features)<br>
+3.Technology Stack<br>
 4. Project Structure<br>
 5. Frontend Architecture<br>
 6. Backend Architecture<br>
