@@ -7,24 +7,24 @@ The chatbot extracts meaningful information from uploaded files, constructs cont
 
 ## 📚 Table of Contents
 -[About](#About)
-2. Features
-3. Technology Stack
-4. Project Structure
-5. Frontend Architecture
-6. Backend Architecture
-7. NLP Processing Pipeline
-8. End-to-End AI Workflow
-9. API Documentation
-10. Google Gemini API Endpoint
-11. Conversation History Module
-12. Technical Report
-15. Installation
-16. Environment Variables
-17. Running the Project
-18. Demo Video
-19. Future Improvements
-20. Contributing
-21. License
+2. Features<br>
+3. Technology Stack<br>
+4. Project Structure<br>
+5. Frontend Architecture<br>
+6. Backend Architecture<br>
+7. NLP Processing Pipeline<br>
+8. End-to-End AI Workflow<br>
+9. API Documentation<br>
+10. Google Gemini API Endpoint<br>
+11. Conversation History Module<br>
+12. Technical Report<br>
+15. Installation<br>
+16. Environment Variables<br>
+17. Running the Project<br>
+18. Demo Video<br>
+19. Future Improvements<br>
+20. Contributing<br>
+21. License<br>
 ## 🚀 About
 This project is designed to simplify interaction with structured datasets.
 
