@@ -1,95 +1,81 @@
-<h1 style={{color:"red"}}>
-  THIS IS MY CHATBOT
-</h1>
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
 function App() {
 
-  const [message,setMessage] =
-  useState("");
+  const [message, setMessage] = useState("");
+  const [chat, setChat] = useState([]);
+  const [file, setFile] = useState(null);
 
-  const [chat,setChat] =
-  useState([]);
+  useEffect(() => {
+    const saved = localStorage.getItem("chat");
 
-  const [file,setFile] =
-  useState(null);
-
-  useEffect(()=>{
-
-    const saved =
-      localStorage.getItem("chat");
-
-    if(saved){
-
+    if (saved) {
       setChat(JSON.parse(saved));
-
     }
+  }, []);
 
-  },[]);
+  useEffect(() => {
+    localStorage.setItem("chat", JSON.stringify(chat));
+  }, [chat]);
 
-  useEffect(()=>{
+  async function uploadFile() {
+    try {
+      const formData = new FormData();
 
-    localStorage.setItem(
-      "chat",
-      JSON.stringify(chat)
-    );
+      formData.append("file", file);
 
-  },[chat]);
+      await axios.post(
+        "http://localhost:5000/upload",
+        formData
+      );
 
-  async function uploadFile(){
-
-    const formData =
-      new FormData();
-
-    formData.append(
-      "file",
-      file
-    );
-
-    await axios.post(
-      "http://localhost:5000/upload",
-      formData
-    );
-
-    alert("Uploaded");
+      alert("Uploaded");
+    } catch (error) {
+      console.error(error);
+      alert("Upload failed");
+    }
   }
 
-  async function sendMessage(){
+  async function sendMessage() {
 
-    const userMsg = {
-      sender:"user",
-      text:message
-    };
+    try {
 
-    setChat(prev=>[
-      ...prev,
-      userMsg
-    ]);
+      console.log("Send button clicked");
 
-    const response =
-      await axios.post(
+      const userMsg = {
+        sender: "user",
+        text: message
+      };
+
+      setChat(prev => [...prev, userMsg]);
+
+      const response = await axios.post(
         "http://localhost:5000/chat",
         {
           message
         }
       );
 
-    setChat(prev=>[
-      ...prev,
-      {
-        sender:"bot",
-        text:
-        response.data.reply
-      }
-    ]);
+      setChat(prev => [
+        ...prev,
+        {
+          sender: "bot",
+          text: response.data.reply
+        }
+      ]);
 
-    setMessage("");
+      setMessage("");
 
+    } catch (error) {
+      console.error("Error:", error);
+
+      alert("Failed to send message");
+    }
   }
 
-  return(
+  return (
 
     <div className="container">
 
@@ -97,57 +83,40 @@ function App() {
 
       <input
         type="file"
-        onChange={(e)=>
-          setFile(
-            e.target.files[0]
-          )
-        }
+        onChange={(e) => setFile(e.target.files[0])}
       />
 
-      <button
-        onClick={uploadFile}
-      >
+      <button onClick={uploadFile}>
         Upload
       </button>
 
       <div className="chatbox">
 
-        {
-          chat.map(
-            (item,index)=>(
-              <div
-                key={index}
-                className={
-                  item.sender
-                }
-              >
-                {item.text}
-              </div>
-            )
-          )
-        }
+        {chat.map((item, index) => (
+
+          <div
+            key={index}
+            className={item.sender}
+          >
+            {item.text}
+          </div>
+
+        ))}
 
       </div>
 
       <input
         value={message}
-        onChange={(e)=>
-          setMessage(
-            e.target.value
-          )
-        }
+        onChange={(e) => setMessage(e.target.value)}
       />
 
-      <button
-        onClick={sendMessage}
-      >
+      <button onClick={sendMessage}>
         Send
       </button>
 
     </div>
 
   );
-
 }
 
 export default App;
