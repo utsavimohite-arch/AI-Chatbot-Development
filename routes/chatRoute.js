@@ -1,50 +1,30 @@
 const express = require("express");
 const router = express.Router();
 
-const OpenAI = require("openai");
-const detectIntent =
-  require("../services/nlp");
+const { GoogleGenAI } = require("@google/genai");
 
-const openai = new OpenAI({
-  apiKey:
-    process.env.OPENAI_API_KEY,
+const ai = new GoogleGenAI({
+  apiKey: process.env.GOOGLE_API_KEY,
 });
 
 router.post("/", async (req, res) => {
   try {
     const { message } = req.body;
 
-    const intent =
-      detectIntent(message);
-
-    const completion =
-      await openai.chat.completions.create({
-        model: "gpt-4o-mini",
-        messages: [
-          {
-            role: "system",
-            content:
-              `Intent: ${intent}`
-          },
-          {
-            role: "user",
-            content: message
-          }
-        ]
-      });
+    const result = await ai.models.generateContent({
+      model: "gemini-2.5-flash",
+      contents: message,
+    });
 
     res.json({
-      reply:
-        completion.choices[0]
-          .message.content
+      reply: result.text,
     });
 
   } catch (error) {
-
-    console.log(error);
+    console.error(error);
 
     res.status(500).json({
-      error: "Server Error"
+      reply: "Something went wrong.",
     });
   }
 });

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 .env
+<<<<<<< HEAD
 =======
 # Logs
 logs
@@ -26,3 +27,7 @@ dist-ssr
 *.sln
 *.sw?
 >>>>>>> 557cb0f (Initial frontend commit)
+=======
+node_modules
+dist
+>>>>>>> fa53af1 ( updated backend)
